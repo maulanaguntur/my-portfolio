@@ -1,0 +1,1613 @@
+.home-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .container-fluid{
+        .bg-box{
+            margin-left: 16px;
+            margin-right: 16px;
+            overflow: hidden;
+
+            .opener-text-box {
+                min-height: 600px;
+                background: linear-gradient(180deg, #EDF9FF 47.36%, rgba(255, 255, 255, 0.80) 100%);
+                border-radius: 32px 32px 0px 0px;
+                padding-top: 100px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 178px;
+
+                .wording-wrapper {
+                    .opener-headline{
+                        color: $main-text;
+                        font-family: Poppins;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        margin-bottom: 16px;
+                    }
+                    .words {
+                        border: 0px solid #ddd;
+                        height: 85px;
+                        overflow: hidden;
+
+                        .text-color{
+                            display: block;
+                            animation: spin_words 10s infinite;
+                            color: $primary;
+                            font-family: Poppins;
+                            font-size: 48px;
+                            font-weight: 600;
+                            overflow: hidden;
+                        }
+                        margin-bottom: 10px;
+                    }
+                    @keyframes spin_words {
+                        10%{
+                            transform: translateY(-112%)
+                        }
+                        25%{
+                            transform: translateY(-100%);
+                        }
+                        35%{
+                            transform: translateY(-212%);
+                        }
+                        50%{
+                            transform: translateY(-200%);
+                        }
+                        60%{
+                            transform: translateY(-312%);
+                        }
+                        75%{
+                            transform: translateY(-300%);
+                        }
+                        85%{
+                            transform: translateY(-412%);
+                        }
+                        100%{
+                            transform: translateY(-400%);
+                        }
+                    }
+                    
+                    .paragraph {
+                        color: $menu-color;
+                        text-align: justify;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                    .download {
+                        background-color: $primary;
+                        color: white;
+                        font-size: 14px;
+                        font-weight: 600;
+                        font-family: poppins;
+                        padding: 10px 24px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        border: none;
+                        border-radius: 40px;
+                        .download-btn{
+                            color: #fff;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 4px;
+                        }
+                    }
+                    .download:hover {
+                        color: $white;
+                        transform: translate(-0.25rem, -0.25rem);
+                        background: $secondary;
+                        box-shadow: 0.25rem 0.25rem #000;
+                    }
+                    .download:active {
+                        transform: translate(0);
+                        box-shadow: none;
+                    }
+                    .linkedin {
+                        margin-left: 20px;
+                        background-color: transparent;
+                        color: $primary;
+                        font-size: 14px;
+                        font-weight: 600;
+                        font-family: poppins;
+                        padding: 10px 24px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        border: none;
+                        border-radius: 40px;
+                        .icon-btn{
+                            color: $primary;
+                            width: 24px;
+                            height: 24px;
+                            margin-left: 2px;
+                        }
+                    }
+                    .linkedin:hover {
+                        color: $white;
+                        transform: translate(-0.25rem, -0.25rem);
+                        background: $secondary;
+                        box-shadow: 0.25rem 0.25rem #000;
+                    }
+                    .linkedin:active {
+                        transform: translate(0);
+                        box-shadow: none;
+                    }
+                }
+                    .img-profil{
+                        width: 334.536px;
+                        height: 356.045px;
+                        margin-top: -50px;
+                    }
+            }
+        }
+    }
+}
+
+.about-section {
+    margin-bottom: 200px;
+    height: 550px;
+    background: url(/images/bg-section-2.png), $white;
+    .container-fluid{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 1280px;
+
+            .wrapper-1 {
+                .chip-section {
+                    color: $main-text;
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    background-color: $all-bg;
+                    border-radius: 20px;
+                    padding: 10px 24px;
+                    margin-bottom: 34px;
+                }
+            }
+            .navigation-container {
+                display: flex;
+                justify-content: center;
+                height: 58px;
+                margin: 0 8px;
+                gap: 8px;
+                border-radius: 40px;
+                background: $all-bg;
+
+                .tabbed-navigation {
+                    display: flex;
+                    justify-content: flex-start;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 40px;
+                    background: #f7f7f7;
+                    .tab-btn {
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-weight: 500;
+                        letter-spacing: 0;
+                        display: inline-flex;
+                        position: relative;
+                        flex-grow: 1;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0 110px;
+                        border: none;
+                        border-radius: 40px;
+                        background: transparent;
+                        color: $primary;
+                        text-decoration: none;
+                        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+                    }
+                    #tab-1 {
+                        animation: slideIn 0.5s ease-in-out;
+                        animation-delay: 0.1s;
+                    }
+                      
+                    #tab-2 {
+                        animation: slideIn 0.5s ease-in-out;
+                        animation-delay: 0.2s;
+                    }
+                      
+                    #tab-3 {
+                        animation: slideIn 0.5s ease-in-out;
+                        animation-delay: 0.3s;
+                    }
+                    .tab-btn:focus {
+                        background-color: $white;
+                        color: $primary;
+                        font-weight: 600;
+                        box-shadow: 0 0.1rem 0.4rem rgba(21,27,38,.12);
+                    }
+                    .tab-btn:hover {
+                        background-color: #B9E0F2;
+                        color: #004A77;
+                    }
+                    .tab-btn * {
+                        z-index: 2;
+                    }
+                    @keyframes slideIn {
+                        from {
+                          transform: translateX(-100%);
+                          opacity: 0;
+                        }
+                        to {
+                          transform: translateX(0);
+                          opacity: 1;
+                        }
+                    }
+                }
+            }
+            
+            .container {
+                position: relative;
+
+                .tab-content-1 {
+                    width: 100%;
+                    display: flex;
+                    display: none;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 34px;
+                    position: absolute;
+                    transform: translateX(25px);
+                    content-visibility: hidden;
+
+                    .img {
+                        width: 309px;
+                        height: 282px;
+                    }
+
+                    .personal-info {
+                        margin-left: 50px;
+                            
+                        .heading {
+                            padding-top: 0px;
+                            color: $main-text;
+                            font-family: Poppins;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+
+                        .sub-heading {
+                            color: $menu-color;
+                            text-align: justify;
+                            font-family: Poppins;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                        .detail-info {
+                            margin-top: 24px;
+                            // display: flex;
+                            // flex-wrap: wrap;
+                            // justify-content: space-between;
+                            
+                            .row-1 {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                            
+                                .name {
+                                    margin-right: 60px;
+                                    
+                                    .p {
+                                        color: $main-text;
+                                        text-align: justify;
+                                        font-family: Poppins;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+
+                                        .icon-person-name {
+                                            width: 24px;
+                                            height: 24px;
+                                        }
+                                    }
+                                }
+                                    
+                                .phone-number {
+                                    // margin-right: 268px;
+                                    .p {
+                                        color: $main-text;
+                                        text-align: justify;
+                                        font-family: Poppins;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+
+                                        .phone-call {
+                                            width: 24px;
+                                            height: 24px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .row-2 {
+                                display: flex;
+                                flex-direction: row;
+
+                                .gmail {
+                                    margin-right: 83px;
+
+                                    .p {
+                                        color: $main-text;
+                                        text-align: justify;
+                                        font-family: Poppins;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+
+                                        .mail {
+                                            width: 24px;
+                                            height: 24px;
+                                        }
+                                    }
+                                }
+
+                                .domicile {
+                                    .p {
+                                        color: $main-text;
+                                        text-align: justify;
+                                        font-family: Poppins;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+
+                                        .dom-icon {
+                                            width: 24px;
+                                            height: 24px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .row-3 {
+                                display: flex;
+                                flex-direction: row;
+                                .education {
+                                    .p {
+                                        color: $main-text;
+                                        text-align: justify;
+                                        font-family: Poppins;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+
+                                        .edu-icon {
+                                            width: 24px;
+                                            height: 24px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .language-skills {
+                                padding-top: 24px;
+                                
+                                .heading-language {
+                                    color: $primary;
+                                    font-family: Poppins;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                }
+
+                                hr {
+                                    // height: 2px;
+                                    width: 100%;
+                                    background-color: $menu-color;
+                                }
+
+                                p {
+                                    color: $main-text;
+                                    text-align: justify;
+                                    font-family: Poppins;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+                .tab-content-2 {
+                    position: absolute;
+                    width: 100%;
+                    display: flex;
+                    display: none;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 34px;
+                    padding-left: 168px;
+                    transform: translateX(25px);
+                    content-visibility: hidden;
+
+                    .wrapper-right {
+                        display: flex;
+                        flex-direction: column;
+
+                        .my-journey {
+                            margin-bottom: 24px;
+                            .heading {
+                                color: $main-text;
+                                font-family: Poppins;
+                                font-size: 22px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                            }
+                            hr {
+                                height: 2px;
+                                width: 100%;
+                                background-color: $menu-color;
+                            }
+                        }
+                        .wrap-exp-edu {
+                            display: flex;
+                            flex-direction: column;
+                            .experience {
+                                margin-bottom: 24px;
+                                .tittle {
+                                    // padding-left: 16px;
+                                    margin-bottom: 16px;
+                                    .heading {
+                                        color: $primary;
+                                        text-align: justify;
+                                        font-family: Poppins;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+
+                                        .icon-work {
+                                            width: 24px;
+                                            height: 24px;
+                                        }
+                                    }
+                                }
+                                .contents {
+                                    display: flex;
+                                    flex-direction: row;
+                                    padding-top: 16px;
+                                    border-top: 1px solid $primary;
+                        
+                                    .box {
+                                        padding: 16px;
+                                        background-color: $all-bg;
+                                        cursor: pointer;
+                                        border-radius: 16px;
+                                        transition: all 0.4s;
+                                        margin-right: 20px;
+
+                                        h2 {
+                                            color: $main-text;
+                                            font-family: Poppins;
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            line-height: normal;
+                                        }
+                                        h3 {
+                                            color: $main-text;
+                                            font-family: Poppins;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                        }
+                                        p {
+                                            color: $primary;
+                                            font-family: Poppins;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                        }
+                                    }
+                                    .box:hover {
+                                        box-shadow: 0px 3px 12px 0px #ccc;
+                                    }
+                                }
+                            }
+                            .education {
+                                margin-bottom: 26px;
+                                .tittle {
+                                    // padding-left: 16px;
+                                    margin-bottom: 16px;
+                                    .heading {
+                                        color: $primary;
+                                        text-align: justify;
+                                        font-family: Poppins;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+
+                                        .icon-edu {
+                                            width: 24px;
+                                            height: 24px;
+                                        }
+                                    }
+                                }
+                                .contents {
+                                    display: flex;
+                                    flex-direction: row;
+                                    padding-top: 16px;
+                                    border-top: 1px solid $primary;
+
+                                    .box {
+                                        padding: 16px;
+                                        background-color: $all-bg;
+                                        cursor: pointer;
+                                        border-radius: 16px;
+                                        transition: all 0.4s;
+                                        margin-right: 20px;
+
+                                        h2 {
+                                            color: $main-text;
+                                            font-family: Poppins;
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            line-height: normal;
+                                        }
+                                        h3 {
+                                            color: $main-text;
+                                            font-family: Poppins;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                        }
+                                        p {
+                                            color: $primary;
+                                            font-family: Poppins;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                        }
+                                    }
+                                    .box:hover {
+                                        box-shadow: 0px 3px 12px 0px #ccc;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .tab-content-3 {
+                    position: absolute;
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 34px;
+                    transform: translateX(25px);
+                    content-visibility: hidden;
+
+                    .container {
+                        max-width: 1320px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        .my-skills-part {
+                            .my-skills {
+                                margin-bottom: 24px;
+                                .heading {
+                                    color: $main-text;
+                                    font-family: Poppins;
+                                    font-size: 22px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                }
+                            }
+                            .logo {
+                                .logo-container {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                }
+                                .logo-item {
+                                    width: 100px;
+                                    height: 60px;
+                                    aspect-ratio: 3/2;
+                                    object-fit: contain;
+                                    margin: 10px;
+                                }
+                            }
+                        }
+                        .certificate-container {
+                            margin-top: 70px;
+
+                            .my-certificate {
+                                margin-bottom: 24px;
+                                .heading {
+                                    color: $main-text;
+                                    font-family: Poppins;
+                                    font-size: 22px;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                }
+                            }
+                            .container {
+                                // max-width: 1320px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-start;
+                                gap: 40px;
+                                
+                                .certificate-1 {
+                                    text-align: left;
+                                    width: fit-content;
+                                    .certif-wrapper {
+                                        width: 212px;
+                                        height: 130px;
+                                        margin-bottom: 20px;
+                                        background: $white;
+                                        box-shadow: 4px 4px 18px rgba(137,141,154,.3);
+                                        border-radius: 20px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        .certif-1 {
+                                            width: 177px;
+                                            height: 110px;
+                                        }
+                                    }
+                                    .tittle {
+                                        color: $main-text;
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                .certificate-2 {
+                                    text-align: left;
+                                    width: fit-content;
+                                    .certif-wrapper {
+                                        width: 212px;
+                                        height: 130px;
+                                        margin-bottom: 20px;
+                                        background: $white;
+                                        box-shadow: 4px 4px 18px rgba(137,141,154,.3);
+                                        border-radius: 20px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        .certif-2 {
+                                            width: 177px;
+                                            height: 116px;
+                                        }
+                                    }
+                                    .tittle {
+                                        color: $main-text;
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                .certificate-3 {
+                                    text-align: left;
+                                    width: fit-content;
+                                    .certif-wrapper {
+                                        width: 212px;
+                                        height: 130px;
+                                        margin-bottom: 20px;
+                                        background: $white;
+                                        box-shadow: 4px 4px 18px rgba(137,141,154,.3);
+                                        border-radius: 20px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        .certif-3 {
+                                            width: 177px;
+                                            height: 110px;
+                                        }
+                                    }
+                                    .tittle {
+                                        color: $main-text;
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                .certificate-4 {
+                                    text-align: left;
+                                    width: fit-content;
+                                    .certif-wrapper {
+                                        width: 212px;
+                                        height: 130px;
+                                        margin-bottom: 20px;
+                                        background: $white;
+                                        box-shadow: 4px 4px 18px rgba(137,141,154,.3);
+                                        border-radius: 20px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        .certif-4 {
+                                            width: 177px;
+                                            height: 110px;
+                                        }
+                                    }
+                                    .tittle {
+                                        color: $main-text;
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                .certificate-5 {
+                                    text-align: left;
+                                    width: fit-content;
+                                    .certif-wrapper {
+                                        width: 212px;
+                                        height: 130px;
+                                        margin-bottom: 20px;
+                                        background: $white;
+                                        box-shadow: 4px 4px 18px rgba(137,141,154,.3);
+                                        border-radius: 20px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        .certif-5 {
+                                            width: 177px;
+                                            height: 110px;
+                                        }
+                                    }
+                                    .tittle {
+                                        color: $main-text;
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .tab-content-1.active,
+            .tab-content-2.active,
+            .tab-content-3.active {
+                display: flex; // Show active tab content
+                transform: translateX(0);
+                content-visibility: visible;
+            }
+            .tab-content {
+                display: none;
+            }
+        }
+}
+
+.service-section {
+    margin-bottom: 200px;
+    height: 480px;
+
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: $bg-card;
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        .wrapper {
+                .chip-section {
+                    color: $main-text;
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    background-color: $all-bg;
+                    border-radius: 20px;
+                    padding: 10px 24px;
+                    margin-bottom: 34px;
+                }
+        }
+        .container {
+            max-width: 1320px;
+            .tittle {
+                color: $main-text;
+                font-size: 32px;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .sub-tittle {
+                color: $menu-color;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                margin-bottom: 34px;
+            }
+            .item-list {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 24px;
+                align-items: center;
+                .item {
+                    width: 286px;
+                    border-radius: 40px;
+                    border: 1px solid rgba(1, 43, 58, 0.25);
+                    background: #FFF;
+                    padding: 40px 14px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 0.5s ease-in-out;
+
+                    .symbol {
+                        width: 98px;
+                        margin-bottom: 20px;
+                    }
+                    .label {
+                        color: $primary;
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                    .description {
+                        color: $menu-color;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+                .item:hover {
+                    border-radius: 40px;
+                    border: 2px solid #27A3FF;
+                    background: #FFF;
+                    box-shadow: 0px 1px 10px 0px rgba(39, 163, 255, 0.10), -1px -1px 10px 0px rgba(39, 163, 255, 0.10);
+                    transform: translateY(-2rem);
+                }
+            }
+            .btn-contact {
+                margin-top: 24px;
+                font-size: 18px;
+                font-weight: 600;
+                text-decoration: none;
+                padding: 16px 20px 16px 20px;
+                color: $white;
+                background-color: $primary;
+                border-radius: 40px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 500px;
+                margin-right: 500px;
+            }
+            .btn-contact:hover {
+                color: $primary;
+                background-color: $btn-hover;
+            }
+        }
+    }
+
+}
+
+.project-section {
+    margin-bottom: 200px;
+    height: 2502px;
+
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1280px;
+        .wrapper {
+            .chip-section {
+                margin-top: 70px;
+                color: $main-text;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 400;
+                background-color: $all-bg;
+                border-radius: 20px;
+                padding: 10px 24px;
+                margin-bottom: 34px;
+            }
+        }
+        .container {
+            .tittle {
+                color: $main-text;
+                font-size: 32px;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .sub-tittle {
+                color: $menu-color;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                margin-bottom: 34px;
+            }
+            .navigation-container {
+                display: flex;
+                justify-content: center;
+                height: 58px;
+                margin: 0 8px;
+                gap: 8px;
+                border-radius: 40px;
+                background: $all-bg;
+
+                .navigation {
+                    display: flex;
+                    justify-content: flex-start;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 40px;
+                    background: #f7f7f7;
+                    .tab-btn-project {
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-weight: 500;
+                        letter-spacing: 0;
+                        display: inline-flex;
+                        position: relative;
+                        flex-grow: 1;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0 110px;
+                        border: none;
+                        border-radius: 40px;
+                        background: transparent;
+                        color: $primary;
+                        text-decoration: none;
+                        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+                    }
+                    #tab-project-1 {
+                        animation: slideIn 0.5s ease-in-out;
+                        animation-delay: 0.1s;
+                    }
+                      
+                    #tab-project-2 {
+                        animation: slideIn 0.5s ease-in-out;
+                        animation-delay: 0.2s;
+                    }
+                      
+                    #tab-project-3 {
+                        animation: slideIn 0.5s ease-in-out;
+                        animation-delay: 0.3s;
+                    }
+                    .tab-btn-project:focus {
+                        background-color: $white;
+                        color: $primary;
+                        font-weight: 600;
+                        box-shadow: 0 0.1rem 0.4rem rgba(21,27,38,.12);
+                    }
+                    .tab-btn-project:hover {
+                        background-color: #B9E0F2;
+                        color: #004A77;
+                    }
+                    .tab-btn-project * {
+                        z-index: 2;
+                    }
+                    @keyframes slideIn {
+                        from {
+                          transform: translateX(-100%);
+                          opacity: 0;
+                        }
+                        to {
+                          transform: translateX(0);
+                          opacity: 1;
+                        }
+                    }
+                }
+            }
+            .tab-content-project-1 {
+                .row-1 {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    .mobile-1 {
+                        margin-top: 34px;
+                        background-color: $bg-mobile-1;
+                        border-radius: 40px;
+                        padding: 40px;
+                        position: relative;
+                        width: 622px;
+                        height: 550px;
+        
+                        .category {
+                            width: 130px;
+                            padding: 6px 24px;
+                            color: $main-text;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: normal;
+                            background-color: $white;
+                            border-radius: 40px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .tittle {
+                            color: $txt-mobile-1;
+                            font-size: 34px;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                            display: flex;
+                            align-items: left;
+                        }
+                        .see-detail {
+                            color: $txt-mobile-1;
+                            text-decoration: underline;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .pict-project-split {
+                            width: 600px;
+                            height: 340px;
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            display: flex;
+                            align-items: center;
+                            bottom: 0;
+                        }
+                    }
+                    .mobile-2 {
+                        margin-top: 34px;
+                        background-color: $bg-mobile-2;
+                        border-radius: 40px;
+                        padding: 40px;
+                        position: relative;
+                        width: 622px;
+                        height: 550px;
+        
+                        .category {
+                            width: 130px;
+                            padding: 6px 24px;
+                            color: $main-text;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: normal;
+                            background-color: $white;
+                            border-radius: 40px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .tittle {
+                            color: $txt-mobile-2;
+                            font-size: 34px;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                            display: flex;
+                            align-items: left;
+                        }
+                        .see-detail {
+                            color: $txt-mobile-2;
+                            text-decoration: underline;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .pict-project-split {
+                            width: 600px;
+                            height: 340px;
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            display: flex;
+                            align-items: center;
+                            bottom: 0;
+                        }
+                    }
+                }
+                
+                .row-2 {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    
+                    .mobile-3 {
+                        margin-top: 34px;
+                        background-color: $bg-mobile-3;
+                        border-radius: 40px;
+                        padding: 40px;
+                        position: relative;
+                        width: 622px;
+                        height: 550px;
+        
+                        .category {
+                            width: 130px;
+                            padding: 6px 24px;
+                            color: $main-text;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: normal;
+                            background-color: $white;
+                            border-radius: 40px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .tittle {
+                            color: $txt-mobile-3;
+                            font-size: 34px;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                            display: flex;
+                            align-items: left;
+                        }
+                        .see-detail {
+                            color: $txt-mobile-3;
+                            text-decoration: underline;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .pict-project-split {
+                            width: 600px;
+                            height: 340px;
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            display: flex;
+                            align-items: center;
+                            bottom: 0;
+                        }
+                    }
+                    .mobile-4 {
+                        margin-top: 34px;
+                        background-color: $bg-mobile-4;
+                        border-radius: 40px;
+                        padding: 40px;
+                        position: relative;
+                        width: 622px;
+                        height: 550px;
+        
+                        .category {
+                            width: 130px;
+                            padding: 6px 24px;
+                            color: $main-text;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: normal;
+                            background-color: $white;
+                            border-radius: 40px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .tittle {
+                            color: $txt-mobile-4;
+                            font-size: 34px;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                            display: flex;
+                            align-items: left;
+                        }
+                        .see-detail {
+                            color: $txt-mobile-4;
+                            text-decoration: underline;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .pict-project-split {
+                            width: 600px;
+                            height: 340px;
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            display: flex;
+                            align-items: center;
+                            bottom: 0;
+                        }
+                    }
+                }
+
+                .row-3 {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    
+                    .mobile-5 {
+                        margin-top: 34px;
+                        background-color: $bg-mobile-5;
+                        border-radius: 40px;
+                        padding: 40px;
+                        position: relative;
+                        width: 622px;
+                        height: 550px;
+        
+                        .category {
+                            width: 130px;
+                            padding: 6px 24px;
+                            color: $main-text;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: normal;
+                            background-color: $white;
+                            border-radius: 40px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .tittle {
+                            color: $txt-mobile-5;
+                            font-size: 34px;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                            display: flex;
+                            align-items: left;
+                        }
+                        .see-detail {
+                            color: $txt-mobile-5;
+                            text-decoration: underline;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .pict-project-split {
+                            width: 600px;
+                            height: 340px;
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            display: flex;
+                            align-items: center;
+                            bottom: 0;
+                        }
+                    }
+                    .mobile-6 {
+                        margin-top: 34px;
+                        background-color: $bg-mobile-6;
+                        border-radius: 40px;
+                        padding: 40px;
+                        position: relative;
+                        width: 622px;
+                        height: 550px;
+        
+                        .category {
+                            width: 130px;
+                            padding: 6px 24px;
+                            color: $main-text;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: normal;
+                            background-color: $white;
+                            border-radius: 40px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .tittle {
+                            color: $txt-mobile-6;
+                            font-size: 34px;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                            display: flex;
+                            align-items: left;
+                        }
+                        .see-detail {
+                            color: $txt-mobile-6;
+                            text-decoration: underline;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .pict-project-split {
+                            width: 600px;
+                            height: 340px;
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            display: flex;
+                            align-items: center;
+                            bottom: 0;
+                        }
+                    }
+                }
+
+                .row-4 {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    
+                    .mobile-7 {
+                        margin-top: 34px;
+                        background-color: $bg-mobile-7;
+                        border-radius: 40px;
+                        padding: 40px;
+                        position: relative;
+                        width: 622px;
+                        height: 550px;
+        
+                        .category {
+                            width: 130px;
+                            padding: 6px 24px;
+                            color: $main-text;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: normal;
+                            background-color: $white;
+                            border-radius: 40px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .tittle {
+                            color: $txt-mobile-7;
+                            font-size: 34px;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                            display: flex;
+                            align-items: left;
+                        }
+                        .see-detail {
+                            color: $txt-mobile-7;
+                            text-decoration: underline;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .pict-project-split {
+                            width: 600px;
+                            height: 340px;
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            display: flex;
+                            align-items: center;
+                            bottom: 0;
+                        }
+                    }
+                    .mobile-8 {
+                        margin-top: 34px;
+                        background-color: $bg-mobile-8;
+                        border-radius: 40px;
+                        padding: 40px;
+                        position: relative;
+                        width: 622px;
+                        height: 550px;
+        
+                        .category {
+                            width: 130px;
+                            padding: 6px 24px;
+                            color: $main-text;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: normal;
+                            background-color: $white;
+                            border-radius: 40px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .tittle {
+                            color: $txt-mobile-8;
+                            font-size: 34px;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                            display: flex;
+                            align-items: left;
+                        }
+                        .see-detail {
+                            color: $txt-mobile-8;
+                            text-decoration: underline;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .pict-project-split {
+                            width: 600px;
+                            height: 340px;
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            display: flex;
+                            align-items: center;
+                            bottom: 0;
+                        }
+                    }
+                }
+            }
+            .tab-content-project-2 {
+                .row-1 {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    .web-design-1 {
+                        margin-top: 34px;
+                        background-color: $bg-web-1;
+                        border-radius: 40px;
+                        padding: 40px;
+                        position: relative;
+                        width: 622px;
+                        height: 550px;
+        
+                        .category {
+                            width: 130px;
+                            padding: 6px 24px;
+                            color: $main-text;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: normal;
+                            background-color: $white;
+                            border-radius: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .tittle {
+                            color: $txt-web-1;
+                            font-size: 34px;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                            display: flex;
+                            align-items: left;
+                        }
+                        .see-detail {
+                            color: $txt-web-1;
+                            text-decoration: underline;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .pict-project-split {
+                            width: 600px;
+                            height: 340px;
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            display: flex;
+                            align-items: center;
+                            bottom: 0;
+                        }
+                    }
+                    .web-design-2 {
+                        margin-top: 34px;
+                        background-color: $bg-web-2;
+                        border-radius: 40px;
+                        padding: 40px;
+                        position: relative;
+                        width: 622px;
+                        height: 550px;
+        
+                        .category {
+                            width: 130px;
+                            padding: 6px 24px;
+                            color: $main-text;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: normal;
+                            background-color: $white;
+                            border-radius: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .tittle {
+                            color: $txt-web-2;
+                            font-size: 34px;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                            display: flex;
+                            align-items: left;
+                        }
+                        .see-detail {
+                            color: $txt-web-2;
+                            text-decoration: underline;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .pict-project-split {
+                            width: 600px;
+                            height: 340px;
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            display: flex;
+                            align-items: center;
+                            bottom: 0;
+                        }
+                    }
+                }
+            }
+            .tab-content-project-3 {
+
+            }
+            .tab-content-project-1.active,
+            .tab-content-project-2.active,
+            .tab-content-project-3.active {
+                // display: flex; // Show active tab content
+                transform: translateX(0);
+                content-visibility: visible;
+                
+                .mobile-1 {
+                    margin-top: 34px;
+                    background-color: $bg-mobile-1;
+                    border-radius: 40px;
+                    padding: 40px;
+                    position: relative;
+
+                    .category {
+                        width: 130px;
+                        padding: 6px 24px;
+                        color: $main-text;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: normal;
+                        background-color: $white;
+                        border-radius: 40px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    .tittle {
+                        color: #1C471F;
+                        font-size: 34px;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                        display: flex;
+                        align-items: left;
+                    }
+                    .desc {
+                        color:#1C471F;
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                    }
+                    .see-detail {
+                        color: #1C471F;
+                        text-decoration: underline;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                    .pict-project {
+                        width: 353px;
+                        height: 223px;
+                        position: absolute;
+                        right: 0;
+                        top: 24px;
+                    }
+                }
+            }
+            .tab-content-project {
+                display: none;
+            }
+        }
+    }
+}
+
+.testimonials-section {
+    margin-bottom: 200px;
+    height: 480px;
+
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1280px;
+        .wrapper {
+            .chip-section {
+                margin-top: 70px;
+                color: $main-text;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 400;
+                background-color: $all-bg;
+                border-radius: 20px;
+                padding: 10px 24px;
+                margin-bottom: 34px;
+            }
+        }
+        .container {
+            .tittle {
+                color: $main-text;
+                font-size: 32px;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

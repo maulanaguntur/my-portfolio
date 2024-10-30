@@ -1,0 +1,85 @@
+.navigation {
+    .navbar {
+      // background-color: $white;
+      height: 90px;
+      top: 0;
+      position: fixed;
+      width: 100%;
+      transition: all 0.3s ease;
+
+      &.navbar-fixed-top {
+        background-color: transparent; // Set your desired background color
+        box-shadow: none; // Remove the shadow if needed
+        z-index: 1000; // Adjust z-index as needed
+    }
+
+      .container-fluid {
+        max-width: 1280px;
+        justify-content: space-between;
+        .nav-wrapper {
+          display: flex;
+          .navbar-brand {
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+            .g-image {
+                width: 47px;
+                height: 38.536px;
+                margin-left: 100px;
+            }
+          }
+        }
+        .nav-wrapper-menu{
+          margin-right: 100px;
+          .navbar-nav {
+            .nav-item {
+              margin-left: 30px;
+              .nav-link {
+                color: $main-text;
+                font-size: 14px;
+                font-weight: 500;
+              }
+              .nav-link:hover{
+                color: $primary;
+                font-weight: 500;
+              }
+              &.active {
+                color: $primary;
+                font-weight: 500;
+              }
+              &::first-child {
+                margin-left: 0;
+              }
+            }
+            .btn-contact {
+              margin-left: 30px;
+              padding-left: 24px;
+              padding-right: 24px;
+              align-items: center;
+              color: $primary;
+              font-size: 14px;
+              font-weight: 600;
+              line-height: normal;
+              background-color: $all-bg;
+              border-radius: 40px;
+              align-items: center;
+            }
+            .btn-contact:hover{
+              font-size: 14px;
+              font-weight: 600;
+              color: $primary;
+              background-color: $btn-hover;
+            }
+          }
+        }
+      }
+    }
+    .navbar.navbar-fixed-top.scrolled {
+      background-color: $white;
+      transition: all 0.5s;
+      animation: slideDown .5s forwards;
+      box-shadow: rgba(27,39,12,.1) 0 1px 3px;
+      padding: 24px 0;
+    }
+  }
+  
